@@ -1,0 +1,173 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* Ensures padding and borders don't mess with width calculations */
+}
+
+/* Right side section */
+.right-side {
+   display: flex;
+   justify-content: center;  /* Horizontally center the content */
+   align-items: flex-start;  /* Align items from the top */
+   flex-direction: column;   /* Stack content vertically */
+   padding-top: 20px;        /* Optional: Add some padding on top */
+   height: auto;             /* Adjust height dynamically */
+}
+
+/* Writing div inside right-side section */
+.writing-div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;  /* Vertically center content */
+   align-items: center;      /* Horizontally center content */
+   margin-top: 20px;         /* Optional: Add margin on top */
+   padding: 20px;            /* Ensure padding is responsive */
+   max-width: 100%;          /* Prevent overflow */
+   width: 100%;              /* Ensure the div takes up full available width */
+}
+
+/* Paragraph styles in writing-div */
+.writing-div p {
+   margin-bottom: 15px;      /* Add space between paragraphs */
+   text-align: center;       /* Center text */
+   line-height: 2.5;         /* Adjust line height for readability */
+}
+
+/* Responsive images */
+img.img-fluid {
+   width: 100%;
+   height: auto;
+}
+
+/* Center the image within the parent div */
+.center-img {
+   width: 60%; /* Keep the image small, 60% of the container width */
+   max-width: 250px; /* Restrict maximum width for large screens */
+   height: auto; /* Maintain aspect ratio */
+}
+
+/* Main text in the center of the image */
+.main-text {
+   transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+/* Main heading inside main-text */
+.main-text h3 {
+   font-size: 3rem; /* Increase font size for better visibility */
+   color: white; /* Ensure text stands out */
+}
+
+/* Media query for medium screens (tablets, smaller devices) */
+@media (max-width: 768px) {
+   .writing-div {
+       padding: 15px; /* Reduce padding on smaller screens */
+   }
+
+   .right-side {
+       padding-top: 20px; /* Reduce padding-top */
+   }
+
+   .right-side p {
+       font-size: 28px; /* Adjust font size */
+   }
+
+   .navbar-nav {
+       font-size: 14px; /* Adjust navbar font size */
+   }
+
+   .img-div {
+       width: 100%; /* Ensure image div takes up full width */
+       padding: 10px; /* Reduce padding */
+   }
+
+   .main-text h3 {
+       font-size: 2rem; /* Adjust heading size */
+   }
+
+   .center-img {
+       width: 50%; /* Scale image down for smaller screens */
+   }
+}
+
+/* Media query for small screens (mobile phones) */
+@media (max-width: 576px) {
+   .main-text h3 {
+       font-size: 1.5rem; /* Adjust heading size */
+   }
+
+   .center-img {
+       width: 50%; /* Ensure image is smaller */
+   }
+
+   .writing-div p {
+       font-size: 16px; /* Reduce text size */
+       padding: top 10px; ;
+   }
+
+   .navbar-nav {
+       font-size: 12px; /* Smaller font for navbar */
+   }
+
+   footer .footer-blocks p {
+       font-size: 12px; /* Smaller footer text */
+   }
+
+   footer {
+       padding: 10px; /* Add space at the bottom */
+   }
+
+   .navbar-toggler {
+       margin-right: 10px; /* Adjust space for toggler */
+   }
+
+   .img-div {
+       padding: 5px; /* Reduce padding */
+   }
+
+   .content-wrapper {
+       width: 100%; /* Make content wrapper full width on mobile */
+    }
+}
+.center-img {
+   width: 50%; /* Scale image down for smaller screens */
+}
+
+
+/* Media query for small screens (mobile phones) */
+@media (max-width: 576px) {
+.main-text h3 {
+   font-size: 1.5rem; /* Adjust heading size */
+}
+
+.center-img {
+   width: 50%; /* Ensure image is smaller */
+}
+
+.writing-div p {
+   font-size: 16px; /* Reduce text size */
+}
+
+.navbar-nav {
+   font-size: 12px; /* Smaller font for navbar */
+}
+
+footer .footer-blocks p {
+   font-size: 12px; /* Smaller footer text */
+}
+
+footer {
+   padding: 10px; /* Add space at the bottom */
+}
+
+.navbar-toggler {
+   margin-right: 10px; /* Adjust space for toggler */
+}
+
+.img-div {
+   padding: 5px; /* Reduce padding */
+}
+
+.content-wrapper {
+   width: 100%; /* Make content wrapper full width on mobile */
+    }
+}
